@@ -9,8 +9,8 @@ import (
 var (
 	listen   = flag.String("listen", ":80", "Address to listen on")
 	tls      = flag.Bool("tls", false, "Use TLS (requires -cert and -key)")
-	cert     = flag.String("cert", "", "TLS cert file")
-	key      = flag.String("key", "", "TLS key file")
+	cert     = flag.String("cert", "test.crt", "TLS cert file")
+	key      = flag.String("key", "test.key", "TLS key file")
 	password = flag.String("password", "", "Enable basic authentication")
 )
 
